@@ -758,19 +758,19 @@ class AppComponent {
         e.stopPropagation();
         setTimeout(() => {
             html2canvas__WEBPACK_IMPORTED_MODULE_1___default()(this.lauro.nativeElement, {
-                width: 1080 * window.devicePixelRatio,
-                height: 1920 * window.devicePixelRatio,
-                windowWidth: 1080 * window.devicePixelRatio,
-                windowHeight: 1920 * window.devicePixelRatio,
+                width: 1080,
+                height: 1920,
+                windowWidth: 1080,
+                windowHeight: 1920,
                 x: 0,
                 onclone: (doc) => {
                     const svgs = doc.getElementsByTagName('svg');
                     for (let x = 0; x < svgs.length; x++) {
                         const svg = svgs.item(x);
-                        svg.setAttribute('width', 1080 * window.devicePixelRatio + 'px');
-                        svg.setAttribute('height', 1920 * window.devicePixelRatio + 'px');
-                        svg.style.width = 1080 * window.devicePixelRatio + 'px';
-                        svg.style.height = 1920 * window.devicePixelRatio + 'px';
+                        svg.setAttribute('width', (100 * window.devicePixelRatio) + '%');
+                        svg.setAttribute('height', (100 * window.devicePixelRatio) + '%');
+                        svg.style.width = '1080px';
+                        svg.style.height = '1920px';
                     }
                 }
             }).then((canvas) => {
