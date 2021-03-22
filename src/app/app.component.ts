@@ -118,7 +118,11 @@ export class AppComponent implements AfterViewInit {
         }
       }).then((canvas) => {
         canvas.toBlob(imageBlob => {
-          this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+          // this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+          navigator.share({
+            url: window.URL.createObjectURL(imageBlob),
+            title: '#SomosTodosLauro'
+          });
         });
       });
     }, 0);
