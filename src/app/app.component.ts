@@ -120,10 +120,14 @@ export class AppComponent implements AfterViewInit {
         if(navigator.share){
           canvas.toBlob(imageBlob => {
             console.log('share');
+            var file = new File([imageBlob], "SomosTodosLauro.png", {type: 'image/png'});
+            var filesArray = [file];
             navigator.share({
-              url: window.URL.createObjectURL(imageBlob),
+              text: 'Compartilhe o seu Lauro',
+              files: filesArray,
+              url: 'https://somostodoslauro.github.io/',
               title: '#SomosTodosLauro'
-            });
+            }as any);
           });
         }else{
           canvas.toBlob(imageBlob => {
