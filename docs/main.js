@@ -774,9 +774,20 @@ class AppComponent {
                     }
                 }
             }).then((canvas) => {
-                canvas.toBlob(imageBlob => {
-                    this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
-                });
+                if (navigator.share) {
+                    navigator.share({
+                        title: '#SomosTodosLauro',
+                        url: 'https://somostodoslauro.github.io/'
+                    }).then(() => {
+                        console.log('Thanks for sharing!');
+                    })
+                        .catch(console.error);
+                }
+                else {
+                    canvas.toBlob(imageBlob => {
+                        this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+                    });
+                }
             });
         }, 0);
     }
