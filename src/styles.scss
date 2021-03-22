@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: url('assets/background.png'); }
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+svg {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
