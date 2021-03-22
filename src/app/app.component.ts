@@ -101,30 +101,36 @@ export class AppComponent implements AfterViewInit {
 
     setTimeout(()   => {
       html2canvas(this.lauro.nativeElement, {
-        width: 1080,
-        height: 1920,
-        windowWidth: 1080,
-        windowHeight: 1920,
+        width: 1080/window.devicePixelRatio,
+        height: 1920/window.devicePixelRatio,
+        windowWidth: 1080/window.devicePixelRatio,
+        windowHeight: 1920/window.devicePixelRatio,
         x: 0,
         onclone: (doc) => {
           const svgs = doc.getElementsByTagName('svg');
           for (let x = 0; x < svgs.length; x++) {
             const svg = svgs.item(x);
-            svg.setAttribute('width', '1080px');
-            svg.setAttribute('height', '1920px');
-            svg.style.width = '1080px';
-            svg.style.height = '1920px';
+            svg.setAttribute('width', (1080/window.devicePixelRatio)+'px');
+            svg.setAttribute('height', (1920/window.devicePixelRatio)+'px');
+            svg.style.width = (1080/window.devicePixelRatio)+'px';
+            svg.style.height = (1920/window.devicePixelRatio)+'px';
           }
         }
       }).then((canvas) => {
-        canvas.toBlob(imageBlob => {
-          // this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
-          console.log('share');
-          navigator.share({
-            url: window.URL.createObjectURL(imageBlob),
-            title: '#SomosTodosLauro'
+        if(navigator.share){
+          canvas.toBlob(imageBlob => {
+            // this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+            console.log('share');
+            navigator.share({
+              url: window.URL.createObjectURL(imageBlob),
+              title: '#SomosTodosLauro'
+            });
           });
-        });
+        }else{
+          canvas.toBlob(imageBlob => {
+            this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+          });
+        }
       });
     }, 0);
   }
