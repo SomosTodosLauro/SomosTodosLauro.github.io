@@ -119,6 +119,7 @@ export class AppComponent implements AfterViewInit {
       }).then((canvas) => {
         canvas.toBlob(imageBlob => {
           // this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
+          console.log('share');
           navigator.share({
             url: window.URL.createObjectURL(imageBlob),
             title: '#SomosTodosLauro'
