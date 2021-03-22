@@ -1,0 +1,101 @@
+.container {
+  width: 56.25vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.aspect-ratio-container {
+  padding-top: 177.777777778%;
+  position: relative;
+}
+
+.content-container, .overlay, .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.logo {
+  height: auto;
+  width: 90%;
+  margin: 115% 5% 0;
+  box-sizing: border-box;
+  opacity: 1;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    line-height: 1em;
+    margin: 2% 0;
+    animation: fade 2s infinite ease-in;
+  }
+
+  &.done {
+    margin-top: 130%;
+    p {
+      display: none;
+    }
+  }
+}
+
+.fadeOut {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.fadeIn {
+  transition: opacity 1s;
+  opacity: 1;
+  z-index: 0;
+}
+
+@keyframes fade {
+  0% {opacity: 1};
+  50% {opacity: 0};
+  60% {opacity: 1};
+}
+
+.lauro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.arrows {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 25%;
+  }
+}
+
+.options {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+
+  button {
+    width: 25%;
+  }
+}
