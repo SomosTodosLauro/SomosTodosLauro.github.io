@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kevintalarico/Documents/kev/grilo/SomosTodosLauro.github.io/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /Users/kevintalarico/Documents/kev/grilo/somostodoslauro/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
