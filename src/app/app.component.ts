@@ -123,7 +123,7 @@ export class AppComponent implements AfterViewInit {
             var file = new File([imageBlob], "SomosTodosLauro.png", {type: 'image/png'});
             var filesArray = [file];
             navigator.share({
-              text: 'Compartilhe o seu Lauro',
+              text: 'Veja o meu Lauro! #SomosTodosLauro',
               files: filesArray,
               url: 'https://somostodoslauro.github.io/',
               title: '#SomosTodosLauro'
