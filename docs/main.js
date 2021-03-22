@@ -777,11 +777,19 @@ class AppComponent {
                 }
             }).then((canvas) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
                 try {
-                    yield navigator.share(canvas);
+                    yield navigator.share();
+                    canvas.toBlob(myBlob => {
+                        const shareData = {
+                            title: 'SomosTodosLauro',
+                            text: 'SomosTodosLauro but text',
+                            url: '' + myBlob.text(),
+                        };
+                        navigator.share(shareData);
+                    });
                     console.log("foi");
                 }
                 catch (err) {
-                    console.log("num foi");
+                    console.log("num foi ", err);
                     canvas.toBlob(imageBlob => {
                         this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
                     });
