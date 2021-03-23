@@ -119,8 +119,21 @@ export class MainComponent  implements AfterViewInit {
           }
         }
       }).then((canvas) => {
-        if (navigator.share){
+        function iOS() {
+          return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+          ].includes(navigator.platform)
+          // iPad on iOS 13 detection
+          || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        }
+        if (navigator.share && !iOS){
           canvas.toBlob(imageBlob => {
+            
             console.log('share');
             const file = new File([imageBlob], 'SomosTodosLauro.png', {type: 'image/png'});
             const filesArray = [file];
