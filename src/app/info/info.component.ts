@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  private show = true;
-  hide = false;
+  private show = false;
+  hide = true;
 
   set showInfo(show: boolean) {
     if (!show) {
