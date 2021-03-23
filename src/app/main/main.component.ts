@@ -131,7 +131,7 @@ export class MainComponent  implements AfterViewInit {
           // iPad on iOS 13 detection
           || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
         }
-        if (navigator.share && !iOS){
+        if (navigator.share && !iOS()){
           canvas.toBlob(imageBlob => {
             
             console.log('share');
