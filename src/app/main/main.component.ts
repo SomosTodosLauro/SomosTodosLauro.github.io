@@ -124,12 +124,16 @@ export class MainComponent  implements AfterViewInit {
             console.log('share');
             const file = new File([imageBlob], 'SomosTodosLauro.png', {type: 'image/png'});
             const filesArray = [file];
-            navigator.share({
-              text: 'Veja o meu Lauro! #SomosTodosLauro',
-              files: filesArray,
-              url: 'https://somostodoslauro.github.io/',
-              title: '#SomosTodosLauro'
-            }as any);
+            let newVariable: any;
+            newVariable = window.navigator;
+            if (newVariable.canShare && newVariable.canShare({ files: filesArray })) {
+              newVariable.share({
+                text: 'Veja o meu Lauro! #SomosTodosLauro',
+                files: filesArray,
+                url: 'https://somostodoslauro.github.io/',
+                title: '#SomosTodosLauro'
+              }as any);
+            }
           });
         }else{
           canvas.toBlob(imageBlob => {
