@@ -132,7 +132,7 @@ export class MainComponent  implements AfterViewInit {
           || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
         }
         if(iOS()){
-          window.alert('Tire um print e compartilhe! (habilitaremos a função de download para iOS em breve')
+          window.alert('Tire um print e compartilhe! (habilitaremos a função de download para iOS em breve)')
           return;
         }
         if (navigator.share){
