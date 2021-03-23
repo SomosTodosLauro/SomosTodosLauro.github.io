@@ -124,10 +124,8 @@ export class MainComponent  implements AfterViewInit {
             console.log('share');
             const file = new File([imageBlob], 'SomosTodosLauro.png', {type: 'image/png'});
             const filesArray = [file];
-            let newVariable: any;
-            newVariable = window.navigator;
-            if (newVariable.canShare && newVariable.canShare({ files: filesArray })) {
-              newVariable.share({
+            if ((navigator as any).canShare && (navigator as any).canShare({ files: filesArray })) {
+              navigator.share({
                 text: 'Veja o meu Lauro! #SomosTodosLauro',
                 files: filesArray,
                 url: 'https://somostodoslauro.github.io/',
