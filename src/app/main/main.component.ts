@@ -24,6 +24,7 @@ export class MainComponent  implements AfterViewInit {
 
   overlay = false;
   done = false;
+  playMusic = false;
 
   constructor(
     private backgroundService: BackgroundService,
@@ -47,7 +48,7 @@ export class MainComponent  implements AfterViewInit {
 
 
   get music(): string {
-    return this.backgroundService.music;
+    return this.playMusic ? this.backgroundService.music : '';
   }
 
   get options(): Record<string, string> {
