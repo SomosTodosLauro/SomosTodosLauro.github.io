@@ -13,8 +13,21 @@ export class AudioComponent implements OnInit, OnChanges {
   howl: Howl;
 
   muted = false;
+  mutedOnBlur = false;
 
   ngOnInit(): void {
+    window.onblur = () => {
+      if (!this.muted) {
+        this.mutedOnBlur = true;
+        this.muteToggle();
+      }
+    };
+
+    window.onfocus = () => {
+      if (this.mutedOnBlur && this.muted) {
+        this.muteToggle();
+      }
+    };
     Howler.mute(this.muted);
   }
 
