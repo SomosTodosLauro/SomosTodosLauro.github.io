@@ -1,0 +1,18 @@
+<button (click)="showInfo = true">
+  <img src="assets/icons/info.svg" alt="Show info" />
+</button>
+
+<ng-container *ngIf="!hide">
+  <div class="info" [class.show]="showInfo" (click)="showInfo = false"></div>
+  <div class="content" [class.show]="showInfo" (click)="showInfo = false">
+    <h1>#SomosTodosLauro</h1>
+    <p>Além do novo mascote da banda O Grilo, o Lauro sou eu, o Lauro é você, <strong>#SomosTodosLauro</strong>!</p>
+
+    <p>Crie o seu próprio Lauro também clicando nos ícones abaixo e selecionando o que você quer mudar. Quando pronto, compartilhe seu Lauro com o botão de compartilhar e vamos celebrar juntos o lançamento do mais novo álbum: <strong>Você Não Sabe De Nada #VNSDN</strong></p>
+
+    <p>Este é um aplicativo feito pela comunidade e, esperamos que em breve, teremos novas características para personalizar o seu Lauro. As artes são inspiradas nas ilustrações de Pietro Soldi(<strong>@pietro.soldi</strong> ).</p>
+
+    <p>Ideação, artes inéditas, auxílio no código: Kevin Talarico (<strong>@talaris.valentine</strong>)<br>
+    Mestre da programação: Víctor Silva (<strong>@estrepitos</strong>)</p>
+  </div>
+</ng-container>

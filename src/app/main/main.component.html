@@ -7,6 +7,7 @@
         <p #text>Toque em qualquer lugar pra começar</p>
       </div>
       <div class="overlay" [class.fadeIn]="overlay">
+
         <app-audio class="music" [file]="music"></app-audio>
         <div class="arrows">
           <button (click)="previous()"><img src="assets/icons/arrow-left.svg" alt="Previous" /></button>
@@ -22,6 +23,7 @@
           <button (click)="select('background')"><img src="assets/icons/background.svg" alt="Change background" /></button>
           <button (click)="share($event)"><img src="assets/icons/share.svg" alt="Share" /></button>
         </div>
+        <app-info></app-info>
       </div>
     </div>
   </div>

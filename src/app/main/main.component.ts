@@ -22,7 +22,7 @@ export class MainComponent  implements AfterViewInit {
 
   selectedService: OptionsService;
 
-  overlay = false;
+  overlay = true;
   done = false;
 
   constructor(
