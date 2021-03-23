@@ -33,7 +33,7 @@ export class AudioComponent implements OnInit, OnChanges {
     }
 
     if (this.file) {
-      this.howl = new Howl({ autoplay: true, volume: .25, loop: true, src: new Array<string>(this.file)});
+      this.howl = new Howl({ autoplay: true, html5: true, volume: .25, loop: true, src: new Array<string>(this.file)});
     }
   }
 
