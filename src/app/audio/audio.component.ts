@@ -25,6 +25,7 @@ export class AudioComponent implements OnInit, OnChanges {
 
     window.onfocus = () => {
       if (this.mutedOnBlur && this.muted) {
+        this.mutedOnBlur = false;
         this.muteToggle();
       }
     };
