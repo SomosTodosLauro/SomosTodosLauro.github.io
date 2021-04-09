@@ -7,6 +7,7 @@
         <p #text>Toque em qualquer lugar pra começar</p>
       </div>
       <div class="overlay" [class.fadeIn]="overlay">
+        <button *ngIf="colorButtonColor" class="change-color" [style.background-color]="colorButtonColor" (click)="changeColor()"></button>
         <app-audio class="music" [file]="music"></app-audio>
         <div class="arrows">
           <button (click)="previous()"><img src="assets/icons/arrow-left.svg" alt="Previous" /></button>

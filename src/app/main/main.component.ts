@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import saveAs from 'file-saver';
 import html2canvas from 'html2canvas';
 import { ClothesService } from '../lauro/clothes/clothes.service';
@@ -15,7 +15,7 @@ import { OptionsService } from '../lauro/services/options.service';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements AfterViewInit {
+export class MainComponent implements OnInit, AfterViewInit {
   @ViewChild('lauro') lauro: ElementRef;
   @ViewChild('text') text: ElementRef;
   @ViewChild('canvasRef') canvasRef: ElementRef;
@@ -23,9 +23,11 @@ export class MainComponent implements AfterViewInit {
   selectedService: OptionsService;
   selected: string;
 
-  overlay = false;
+  overlay = true;
   done = false;
   playMusic = false;
+
+  colorButtonColor: string;
 
   constructor(
     private backgroundService: BackgroundService,
@@ -38,9 +40,12 @@ export class MainComponent implements AfterViewInit {
     private clothesService: ClothesService
   ) { }
 
+  ngOnInit(): void {
+    this.select('hair');
+  }
+
   ngAfterViewInit(): void {
     this.setTextSize();
-    this.select('hair');
   }
 
   @HostListener('window:resize', ['$event'])
@@ -59,17 +64,37 @@ export class MainComponent implements AfterViewInit {
     };
   }
 
+  changeColor(): void {
+    if (this.selectedService) {
+      this.selectedService.nextColor();
+      this.colorUpdate();
+    }
+  }
+
   select(option: string): void {
     this.selected = option;
     this.selectedService = this.resolveService(option);
+    this.colorUpdate();
   }
 
   previous(): void {
-    return this.selectedService && this.selectedService.previous();
+    if (this.selectedService) {
+      this.selectedService.previous();
+      this.colorUpdate();
+    }
   }
 
   next(): void {
-    return this.selectedService && this.selectedService.next();
+    if (this.selectedService) {
+      this.selectedService.next();
+      this.colorUpdate();
+    }
+  }
+
+  private colorUpdate(): void {
+    if (this.selectedService) {
+      this.colorButtonColor = this.selectedService.mainColor;
+    }
   }
 
   private resolveService(option: string): OptionsService | null {

@@ -96,6 +96,19 @@
   }
 }
 
+.change-color {
+  width: 16%;
+  height: 9%;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  margin-left: -8%;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 3px 3px 0px white, -3px -3px 0px white, -3px 3px 0px white,
+    3px -3px 0px white;
+}
+
 .options {
   position: absolute;
   bottom: 0;

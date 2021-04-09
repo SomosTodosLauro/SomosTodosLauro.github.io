@@ -14,4 +14,9 @@ export class HairComponent {
     return this.service.selected;
   }
 
+  // KEVIN adicionar isso nos outros componentes que você quer por color
+  get color(): string {
+    return this.service.colorClass;
+  }
+
 }
