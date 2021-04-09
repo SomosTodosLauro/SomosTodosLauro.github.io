@@ -15,12 +15,13 @@ import { OptionsService } from '../lauro/services/options.service';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent  implements AfterViewInit {
+export class MainComponent implements AfterViewInit {
   @ViewChild('lauro') lauro: ElementRef;
   @ViewChild('text') text: ElementRef;
   @ViewChild('canvasRef') canvasRef: ElementRef;
 
   selectedService: OptionsService;
+  selected: string;
 
   overlay = false;
   done = false;
@@ -39,6 +40,7 @@ export class MainComponent  implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.setTextSize();
+    this.select('hair');
   }
 
   @HostListener('window:resize', ['$event'])
@@ -58,6 +60,7 @@ export class MainComponent  implements AfterViewInit {
   }
 
   select(option: string): void {
+    this.selected = option;
     this.selectedService = this.resolveService(option);
   }
 
@@ -101,7 +104,7 @@ export class MainComponent  implements AfterViewInit {
     this.done = true;
     e.stopPropagation();
 
-    setTimeout(()   => {
+    setTimeout(() => {
       html2canvas(this.lauro.nativeElement, {
         width: 1080 / window.devicePixelRatio,
         height: 1920 / window.devicePixelRatio,
@@ -128,18 +131,18 @@ export class MainComponent  implements AfterViewInit {
             'iPhone',
             'iPod'
           ].includes(navigator.platform)
-          // iPad on iOS 13 detection
-          || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+            // iPad on iOS 13 detection
+            || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
         }
-        if(iOS()){
+        if (iOS()) {
           window.alert('Tire um print e compartilhe! (habilitaremos a função de download para iOS em breve)')
           return;
         }
-        if (navigator.share){
+        if (navigator.share) {
           canvas.toBlob(imageBlob => {
-            
+
             console.log('share');
-            const file = new File([imageBlob], 'SomosTodosLauro.png', {type: 'image/png'});
+            const file = new File([imageBlob], 'SomosTodosLauro.png', { type: 'image/png' });
             const filesArray = [file];
             if ((navigator as any).canShare && (navigator as any).canShare({ files: filesArray })) {
               navigator.share({
@@ -147,10 +150,10 @@ export class MainComponent  implements AfterViewInit {
                 files: filesArray,
                 url: 'https://somostodoslauro.github.io/',
                 title: '#SomosTodosLauro'
-              }as any);
+              } as any);
             }
           });
-        }else{
+        } else {
           canvas.toBlob(imageBlob => {
             this.triggerDownload(imageBlob, 'SomosTodosLauro.png');
           });

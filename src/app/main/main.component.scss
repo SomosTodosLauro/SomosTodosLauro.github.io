@@ -9,7 +9,9 @@
   position: relative;
 }
 
-.content-container, .overlay, .logo {
+.content-container,
+.overlay,
+.logo {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,9 +65,15 @@
 }
 
 @keyframes fade {
-  0% {opacity: 1};
-  50% {opacity: 0};
-  60% {opacity: 1};
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
 }
 
 .lauro {
@@ -96,6 +104,13 @@
   width: 100%;
 
   button {
-    width: 25%;
+    width: 23%;
+    margin: 0 1%;
+    box-sizing: border-box;
+
+    &.selected {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
   }
 }

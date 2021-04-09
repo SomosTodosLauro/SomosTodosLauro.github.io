@@ -13,13 +13,13 @@
           <button (click)="next()"><img src="assets/icons/arrow-right.svg" alt="Next" /></button>
         </div>
         <div class="options">
-          <button (click)="select('hair')"><img src="assets/icons/hair.svg" alt="Change hair" /></button>
-          <button (click)="select('eyes')"><img src="assets/icons/eyes.svg" alt="Change eyes" /></button>
-          <button (click)="select('nose')"><img src="assets/icons/nose.svg" alt="Change nose" /></button>
-          <button (click)="select('mouth')"><img src="assets/icons/mouth.svg" alt="Change mouth" /></button>
-          <button (click)="select('facial-hair')"><img src="assets/icons/facial-hair.svg" alt="Change facial hair" /></button>
-          <button (click)="select('clothes')"><img src="assets/icons/clothes.svg" alt="Change clothes" /></button>
-          <button (click)="select('background')"><img src="assets/icons/background.svg" alt="Change background" /></button>
+          <button (click)="select('hair')" [class.selected]="selected === 'hair'"><img src="assets/icons/hair.svg" alt="Change hair" /></button>
+          <button (click)="select('eyes')" [class.selected]="selected === 'eyes'"><img src="assets/icons/eyes.svg" alt="Change eyes" /></button>
+          <button (click)="select('nose')" [class.selected]="selected === 'nose'"><img src="assets/icons/nose.svg" alt="Change nose" /></button>
+          <button (click)="select('mouth')" [class.selected]="selected === 'mouth'"><img src="assets/icons/mouth.svg" alt="Change mouth" /></button>
+          <button (click)="select('facial-hair')" [class.selected]="selected === 'facial-hair'"><img src="assets/icons/facial-hair.svg" alt="Change facial hair" /></button>
+          <button (click)="select('clothes')" [class.selected]="selected === 'clothes'"><img src="assets/icons/clothes.svg" alt="Change clothes" /></button>
+          <button (click)="select('background')" [class.selected]="selected === 'background'"><img src="assets/icons/background.svg" alt="Change background" /></button>
           <button (click)="share($event)"><img src="assets/icons/share.svg" alt="Share" /></button>
         </div>
         <app-info></app-info>
