@@ -19,9 +19,105 @@
 }
 
 .clothes-6 {
-  .cls-1{fill:none;}.cls-2{fill:#151414;}.cls-3{fill:#fbaa19;}.cls-4{fill:#fff;}
+  .cls-1{fill:none;}.cls-2{fill:#151414;}.cls-3{fill:#ffc50c;}.cls-4{fill:#fff;}
 }
 
 .clothes-7 {
-  .cls-1{fill:none;}.cls-2{fill:#0c0c0c;}.cls-3{fill:#49a8de;}.cls-4{fill:#fff;}
+  .cls-1{fill:none;}.cls-2{fill:#0c0c0c;}.cls-3{fill:#ffc50c;}.cls-4{fill:#fff;}
+}
+
+.color-2{
+  &.clothes-1 {
+    .cls-2{fill:#49a8de;}
+  }
+  &.clothes-2 {
+    .cls-2{fill:#49a8de;}.cls-3{fill:#ffc50c;}
+  }
+  &.clothes-3 {
+    .cls-2{fill:#49a8de;}
+  }
+  &.clothes-4 {
+    .cls-2{fill:#49a8de;}
+  }
+  &.clothes-5 {
+    .cls-3{fill:#49a8de;}
+  }
+  &.clothes-6 {
+    .cls-3{fill:#49a8de;}
+  }
+  &.clothes-7 {
+    .cls-3{fill:#49a8de;}
+  }
+}
+
+.color-3{
+  &.clothes-1 {
+    .cls-2{fill:#ed1c24;}
+  }
+  &.clothes-2 {
+    .cls-2{fill:#ed1c24;}.cls-3{fill:#49a8de;}
+  }
+  &.clothes-3 {
+    .cls-2{fill:#ed1c24;}
+  }
+  &.clothes-4 {
+    .cls-2{fill:#ed1c24;}
+  }
+  &.clothes-5 {
+    .cls-3{fill:#ed1c24;}
+  }
+  &.clothes-6 {
+    .cls-3{fill:#ed1c24;}
+  }
+  &.clothes-7 {
+    .cls-3{fill:#ed1c24;}
+  }
+}
+
+.color-4{
+  &.clothes-1 {
+    .cls-2{fill:#d6d5d4;}
+  }
+  &.clothes-2 {
+    .cls-2{fill:#d6d5d4;}.cls-3{fill:#231f20;}
+  }
+  &.clothes-3 {
+    .cls-2{fill:#d6d5d4;}
+  }
+  &.clothes-4 {
+    .cls-2{fill:#d6d5d4;}
+  }
+  &.clothes-5 {
+    .cls-3{fill:#d6d5d4;}
+  }
+  &.clothes-6 {
+    .cls-3{fill:#d6d5d4;}.cls-4{fill:#231f20;}
+  }
+  &.clothes-7 {
+    .cls-3{fill:#d6d5d4;}
+  }
+}
+
+.color-5{
+  &.clothes-1 {
+    .cls-2{fill:#3d3d3d;}
+  }
+  &.clothes-2 {
+    .cls-2{fill:#3d3d3d;}.cls-3{fill:#FFF;}
+  }
+  &.clothes-3 {
+    .cls-2{fill:#3d3d3d;}
+  }
+  &.clothes-4 {
+    .cls-2{fill:#3d3d3d;}
+  }
+  &.clothes-5 {
+    .cls-3{fill:#3d3d3d;}
+  }
+  &.clothes-6 {
+    .cls-3{fill:#3d3d3d;}
+  }
+  &.clothes-7 {
+    .cls-3{fill:#3d3d3d;}
+  }
 }
