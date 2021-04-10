@@ -7,7 +7,7 @@
 }
 
 .facial-hair-3 {
-  .cls-1{fill:none;}.cls-2{fill:#be1e2d;stroke-width:6px;}.cls-2,.cls-3{stroke:#231f20;stroke-miterlimit:10;}.cls-3{fill:#fff;stroke-width:8px;}
+  .cls-1{fill:none;}.cls-3{stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
 }
 
 .facial-hair-4 {
@@ -19,9 +19,93 @@
 }
 
 .facial-hair-6 {
-  .cls-1{fill:none;}.cls-2{fill:#010101;}
+  .cls-1{fill:none;}.cls-2{fill:#231f20;}
 }
 
 .facial-hair-7 {
-  .cls-1{fill:none;}.cls-2{fill:#0b0b09;}.cls-3{fill:#e4c83a;}
+  .cls-1{fill:none;}.cls-2{fill:#FFF;}.cls-3{fill:#231f20;}.cls-4{fill:#231f20}
+}
+
+.color-2 {
+  &.facial-hair-2{
+    .cls-2{stroke:#E2D343}
+  }
+  &.facial-hair-3{
+    .cls-3{stroke:#E2D343}
+  }
+  &.facial-hair-4{
+    .cls-2{stroke:#E2D343}
+  }
+  &.facial-hair-5{
+    .cls-2{fill:#E2D343}.cls-3{stroke:#231f20}
+  }
+  &.facial-hair-6{
+    .cls-2{fill:#E2D343}
+  }
+  &.facial-hair-7{
+    .cls-2{fill:#0b0b09;}.cls-3{fill:#e4c83a;}
+  }
+}
+
+.color-3 {
+  &.facial-hair-2{
+    .cls-2{stroke:#6F3C1F}
+  }
+  &.facial-hair-3{
+    .cls-3{stroke:#6F3C1F}
+  }
+  &.facial-hair-4{
+    .cls-2{stroke:#6F3C1F}
+  }
+  &.facial-hair-5{
+    .cls-2{fill:#6F3C1F}.cls-3{stroke:#231f20}
+  }
+  &.facial-hair-6{
+    .cls-2{fill:#6F3C1F}
+  }
+  &.facial-hair-7{
+    .cls-2{fill:#0b0b09;}.cls-3{fill:#6F3C1F;}
+  }
+}
+
+.color-4 {
+  &.facial-hair-2{
+    .cls-2{stroke:#CC3300}
+  }
+  &.facial-hair-3{
+    .cls-3{stroke:#CC3300}
+  }
+  &.facial-hair-4{
+    .cls-2{stroke:#CC3300}
+  }
+  &.facial-hair-5{
+    .cls-2{fill:#CC3300}.cls-3{stroke:#231f20}
+  }
+  &.facial-hair-6{
+    .cls-2{fill:#CC3300}
+  }
+  &.facial-hair-7{
+    .cls-2{fill:#0b0b09;}.cls-3{fill:#CC3300;}
+  }
+}
+
+.color-5 {
+  &.facial-hair-2{
+    .cls-2{stroke:#CFCFCF}
+  }
+  &.facial-hair-3{
+    .cls-3{stroke:#CFCFCF}
+  }
+  &.facial-hair-4{
+    .cls-2{stroke:#CFCFCF}
+  }
+  &.facial-hair-5{
+    .cls-2{fill:#CFCFCF}.cls-3{stroke:#231f20}
+  }
+  &.facial-hair-6{
+    .cls-2{fill:#CFCFCF}
+  }
+  &.facial-hair-7{
+    .cls-2{fill:#0b0b09;}.cls-3{fill:#CFCFCF;}
+  }
 }

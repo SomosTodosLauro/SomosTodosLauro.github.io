@@ -14,4 +14,8 @@ export class FacialHairComponent {
     return this.service.selected;
   }
 
+  get color(): string {
+    return this.service.colorClass;
+  }
+
 }
