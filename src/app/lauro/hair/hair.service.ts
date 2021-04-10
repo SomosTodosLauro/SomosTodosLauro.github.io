@@ -11,14 +11,14 @@ export class HairService extends OptionsService {
   // AH, e KEVIN, adicionar essa propriedade nos outros servicos que você quer por color.
   // a ordem do array segue a ordem do enum
   colors = [
-    ['#000', '#F00'], // hair-3
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-3
     [], // hair-1
-    [], // hair-2
-    [], // hair-4
-    [], // hair-5
-    [], // hair-6
-    [], // hair-7
-    [], // hair-8
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-2
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-4
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-5
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-6
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-7
+    ['#000', '#E2D343', '#6F3C1F', '#CC3300', '#CFCFCF'], // hair-8
   ];
 
 

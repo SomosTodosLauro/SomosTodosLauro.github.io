@@ -16,44 +16,120 @@
 }
 
 .hair-6 {
-  .cls-1{fill:none;}.cls-2{fill:#010101;}
+  .cls-1{fill:none;}.cls-2{fill:#231f20;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
 }
 
 .hair-7 {
-  .cls-1{fill:none;}.cls-2{fill:#0e0e0c;}.cls-3{fill:#e1d344;}.cls-4{fill:#fff;}
+  .cls-1{fill:none;}.cls-2{fill:#fff;}.cls-3{fill:#231f20;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
 }
 
 .hair-8 {
-  .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#6f3b1f;}
+  .cls-1{fill:none;}.cls-2{fill:#fff;}.cls-3{fill:#231f20;}.cls-4{fill:#231f20;}
 }
 
 // KEVIN o color-1 é o padrão que tá acima, a partir daqui coloque collor-2, 3, etc, e o cabelo que vai mudar aí dentro
 .color-2 {
   &.hair-2 {
-    .cls-2{fill:#231f20;stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;stroke:#231f20;}.cls-3{fill:#fff;}
   }
   
   &.hair-3 {
-    .cls-2{fill:#F00;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
   }
   
   &.hair-4 {
-    .cls-2{fill:#231f20;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
   }
   
   &.hair-5 {
-    .cls-2{fill:#231f20;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
   }
   
   &.hair-6 {
-    .cls-2{fill:#010101;}
+    .cls-1{fill:none;}.cls-2{fill:#E2D343;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
   }
   
   &.hair-7 {
-    .cls-2{fill:#0e0e0c;}.cls-3{fill:#e1d344;}.cls-4{fill:#fff;}
+    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#E2D343;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
   }
   
   &.hair-8 {
-    .cls-2{fill:#070707;}.cls-3{fill:#6f3b1f;}
+    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#E2D343;}.cls-4{fill:#231f20;}
   }
+  
+}
+
+.color-3 {
+  &.hair-3 {
+    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-2 {
+    .cls-2{fill:#6F3C1F;stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-4 {
+    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-5 {
+    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-6 {
+    .cls-1{fill:none;}.cls-2{fill:#6F3C1F;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+  }
+  &.hair-7 {
+    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#6F3C1F;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+  }
+  &.hair-8 {
+    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#6F3C1F;}.cls-4{fill:#231f20;}
+  }
+  
+}
+
+.color-4 {
+  &.hair-3 {
+    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-2 {
+    .cls-2{fill:#CC3300;stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-4 {
+    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-5 {
+    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-6 {
+    .cls-1{fill:none;}.cls-2{fill:#CC3300;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+  }
+  &.hair-7 {
+    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#CC3300;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+  }
+  &.hair-8 {
+    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#CC3300;}.cls-4{fill:#231f20;}
+  }
+  
+}
+
+.color-5 {
+  &.hair-3 {
+    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-2 {
+    .cls-2{fill:#CFCFCF;stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-4 {
+    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-5 {
+    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+  }
+  &.hair-6 {
+    .cls-1{fill:none;}.cls-2{fill:#CFCFCF;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+  }
+  &.hair-7 {
+    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#CFCFCF;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+  }
+  &.hair-8 {
+    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#CFCFCF;}.cls-4{fill:#231f20;}
+  }
+  
 }
