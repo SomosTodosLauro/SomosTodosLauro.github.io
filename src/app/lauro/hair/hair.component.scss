@@ -8,7 +8,7 @@
 }
 
 .hair-4 {
-  .cls-1{fill:none;}.cls-2{fill:#231f20;stroke-width:8px;}.cls-2,.cls-3{stroke:#231f20;stroke-miterlimit:10;}.cls-3{fill:#fff;stroke-width:2px;}
+  .cls-1{fill:none;}.cls-2{fill:#231f20;stroke-width:8px;}.cls-2,.cls-3{stroke:#231f20;stroke-miterlimit:10;}.cls-3{fill:#fff;stroke-width:6px;}
 }
 
 .hair-5 {
@@ -30,106 +30,106 @@
 // KEVIN o color-1 é o padrão que tá acima, a partir daqui coloque collor-2, 3, etc, e o cabelo que vai mudar aí dentro
 .color-2 {
   &.hair-2 {
-    .cls-2{fill:#E2D343;stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}
   }
   
   &.hair-3 {
-    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}
   }
   
   &.hair-4 {
-    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}
   }
   
   &.hair-5 {
-    .cls-2{fill:#E2D343;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#E2D343;}
   }
   
   &.hair-6 {
-    .cls-1{fill:none;}.cls-2{fill:#E2D343;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+    .cls-2{fill:#E2D343;}
   }
   
   &.hair-7 {
-    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#E2D343;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+    .cls-2{fill:#070707;}.cls-3{fill:#E2D343;}
   }
   
   &.hair-8 {
-    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#E2D343;}.cls-4{fill:#231f20;}
+    .cls-2{fill:#231f20;}.cls-3{fill:#E2D343;}
   }
   
 }
 
 .color-3 {
   &.hair-3 {
-    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#6F3C1F;}
   }
   &.hair-2 {
-    .cls-2{fill:#6F3C1F;stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#6F3C1F;}
   }
   &.hair-4 {
-    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#6F3C1F;}
   }
   &.hair-5 {
-    .cls-2{fill:#6F3C1F;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#6F3C1F;}
   }
   &.hair-6 {
-    .cls-1{fill:none;}.cls-2{fill:#6F3C1F;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+    .cls-2{fill:#6F3C1F;}
   }
   &.hair-7 {
-    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#6F3C1F;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+    .cls-2{fill:#070707;}.cls-3{fill:#6F3C1F;}
   }
   &.hair-8 {
-    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#6F3C1F;}.cls-4{fill:#231f20;}
+    .cls-2{fill:#231f20;}.cls-3{fill:#6F3C1F;}
   }
   
 }
 
 .color-4 {
   &.hair-3 {
-    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CC3300;}
   }
   &.hair-2 {
-    .cls-2{fill:#CC3300;stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CC3300;}
   }
   &.hair-4 {
-    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CC3300;}
   }
   &.hair-5 {
-    .cls-2{fill:#CC3300;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CC3300;}
   }
   &.hair-6 {
-    .cls-1{fill:none;}.cls-2{fill:#CC3300;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+    .cls-2{fill:#CC3300;}
   }
   &.hair-7 {
-    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#CC3300;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+    .cls-2{fill:#070707;}.cls-3{fill:#CC3300;}
   }
   &.hair-8 {
-    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#CC3300;}.cls-4{fill:#231f20;}
+    .cls-2{fill:#231f20;}.cls-3{fill:#CC3300;}
   }
   
 }
 
 .color-5 {
   &.hair-3 {
-    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CFCFCF;}
   }
   &.hair-2 {
-    .cls-2{fill:#CFCFCF;stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CFCFCF;}
   }
   &.hair-4 {
-    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CFCFCF;}
   }
   &.hair-5 {
-    .cls-2{fill:#CFCFCF;}.cls-2,.cls-3{stroke:#231f20;}.cls-3{fill:#fff;}
+    .cls-2{fill:#CFCFCF;}
   }
   &.hair-6 {
-    .cls-1{fill:none;}.cls-2{fill:#CFCFCF;stroke:#231f20;stroke-miterlimit:10;stroke-width:8px;}
+    .cls-2{fill:#CFCFCF;}
   }
   &.hair-7 {
-    .cls-1{fill:none;}.cls-2{fill:#070707;}.cls-3{fill:#CFCFCF;}.cls-4{fill:#231f20;}.cls-5{fill:#231f20;}
+    .cls-2{fill:#070707;}.cls-3{fill:#CFCFCF;}
   }
   &.hair-8 {
-    .cls-1{fill:none;}.cls-2{fill:#231f20;}.cls-3{fill:#CFCFCF;}.cls-4{fill:#231f20;}
+    .cls-2{fill:#231f20;}.cls-3{fill:#CFCFCF;}
   }
   
 }
